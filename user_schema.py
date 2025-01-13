@@ -1,3 +1,5 @@
+# EXERCICI 3
+
 # Suprimim els camps password i email, per privacitat i no donar dades personals.
 def user_schema(user) -> dict:
     return {
@@ -9,3 +11,5 @@ def user_schema(user) -> dict:
         "age": user[5]
     }
 
+def users_schema(users) -> dict:
+    return [user_schema(user) for user in users]
